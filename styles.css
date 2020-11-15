@@ -20,7 +20,8 @@ body {
 #header {
     height: 100vh;
     background-color: gray;
-    background-image: url(/images/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(/images/hero.jpg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -34,7 +35,7 @@ body {
     color: #ffffff;
     font-size: 25px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-weight: 600;
     display: inline-block;
     width: 120px;
     line-height: 100%;
