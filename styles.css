@@ -60,6 +60,17 @@ body {
     margin-right: 25px;
 }
 
+.header__navigation li:hover::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #fa4659;
+
+    position: relative;
+    top: 10px;
+}
+
 .header__navigation a {
     color: #ffffff;
     text-decoration: none;
