@@ -59,16 +59,26 @@ body {
 .header__navigation li:not(:last-child) {
     margin-right: 25px;
 }
-
 .header__navigation li:hover::after {
     content: '';
     display: block;
     height: 1px;
     width: 100%;
     background-color: #fa4659;
-
     position: relative;
     top: 10px;
+}
+
+.header__navigation li::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0%;
+    background-color: transparent;
+    position: relative;
+    top: 10px;
+
+    transition: all 0.5s;
 }
 
 .header__navigation a {
