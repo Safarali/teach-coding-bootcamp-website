@@ -221,17 +221,16 @@ h3 {
     color: #fff;
 }
 
-.morning-schedule,
-.afternoon-schedule {
+.schedule {
     display: inline-block;
     width: 50%;
 }
 
-.morning-schedule {
+.schedule:first-child {
     border-right: 1px solid #fff;
 }
 
-.afternoon-schedule {
+.schedule:nth-child(2) {
     margin-left: -4px;
 }
 
@@ -252,4 +251,31 @@ h3 {
 .evening-schedule {
     width: max-content;
     margin: 0 auto;
+}
+
+.schedule ul {
+    list-style-type: none;
+    padding: 0 30px;
+}
+
+.schedule ul li {
+    margin-bottom: 20px;
+}
+.schedule ul li span {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.schedule ul li span:first-child {
+    width: 80px;
+}
+
+.schedule ul li span:nth-child(2) {
+    color: #fff;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    margin-left: -4px;
+
+    width: calc(100% - 80px);
 }
