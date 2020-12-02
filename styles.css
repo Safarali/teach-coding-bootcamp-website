@@ -209,3 +209,47 @@ h3 {
     font-size: 40px;
     margin-bottom: 20px;
 }
+
+/* Section - A Typical Day */
+
+.typical-day-section {
+    background-color: #555;
+}
+
+.typical-day-section .section-heading,
+.typical-day-section .section-subheading {
+    color: #fff;
+}
+
+.morning-schedule,
+.afternoon-schedule {
+    display: inline-block;
+    width: 50%;
+}
+
+.morning-schedule {
+    border-right: 1px solid #fff;
+}
+
+.afternoon-schedule {
+    margin-left: -4px;
+}
+
+.typical-day-section .row {
+    border-bottom: 1px solid #fff;
+}
+
+.time {
+    color: #fa4659;
+    font-size: 35px;
+}
+
+.time sup {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.evening-schedule {
+    width: max-content;
+    margin: 0 auto;
+}
