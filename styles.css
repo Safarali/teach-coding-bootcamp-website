@@ -298,10 +298,9 @@ h3 {
 
 #curriculum-section__image {
     width: 100%;
-    opacity: 0.8;
     transform: scale(0.8);
     /* transition: all 1.3s; */
-    animation: animateIcons 2.5s infinite;
+    animation: animateIcons 5s infinite;
 }
 
 /* #curriculum-section__image:hover {
@@ -309,13 +308,47 @@ h3 {
     transform: scale(1);
 } */
 
+.curriculum-section__weeks {
+    display: inline-block;
+    width: 50%;
+}
+
+.curriculum-section__text {
+    vertical-align: top;
+}
+
+.curriculum-section__weeks:nth-child(2) {
+    margin-left: -4px;
+}
+
+.curriculum-section__weeks h4 {
+    font-size: 20px;
+    color: #fa4659;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.curriculum-section__week {
+    list-style-type: none;
+    border-left: 2px solid #fa4659;
+    padding-left: 15px;
+}
+
+.curriculum-section__week li {
+    font-size: 15px;
+    color: #555;
+    line-height: 22px;
+}
+
 @keyframes animateIcons {
     0% {
         transform: scale(0.8);
+        opacity: 0.8;
     }
 
     50% {
         transform: scale(1);
+        opacity: 1;
     }
 
     100% {
