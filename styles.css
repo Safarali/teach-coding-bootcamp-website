@@ -14,6 +14,10 @@ body {
     text-rendering: optimizeLegibility;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Reusable elements */
 .container {
     width: 1200px;
@@ -212,12 +216,12 @@ h3 {
 
 /* Section - A Typical Day */
 
-.typical-day-section {
+#typical-day-section {
     background-color: #555;
 }
 
-.typical-day-section .section-heading,
-.typical-day-section .section-subheading {
+#typical-day-section .section-heading,
+#typical-day-section .section-subheading {
     color: #fff;
 }
 
@@ -234,7 +238,7 @@ h3 {
     margin-left: -4px;
 }
 
-.typical-day-section .row {
+#typical-day-section .row {
     border-bottom: 1px solid #fff;
 }
 
@@ -354,4 +358,105 @@ h3 {
     100% {
         transform: scale(0.8);
     }
+}
+
+/* Admissions Section */
+
+#admissions {
+    background-color: #ebf7ff;
+}
+
+#admissions .row {
+    margin-bottom: 50px;
+}
+
+.admissions__step {
+    width: 25%;
+    padding: 0 15px;
+    display: inline-block;
+    margin-left: -4px;
+    vertical-align: top;
+    /* float: left; */
+}
+
+.admissions__step i {
+    color: #3498db;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.admissions__step p {
+    color: #555;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 26px;
+}
+
+.admissions__button {
+    font-size: 25px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    transition: all 1s;
+
+    width: max-content;
+    display: block;
+    margin: 0 auto;
+}
+
+.admissions__button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #41474d;
+    padding: 40px 0;
+}
+
+.footer__logo,
+.footer__email,
+.footer__socials {
+    display: inline-block;
+    width: calc(100% / 3);
+    vertical-align: middle;
+    margin-right: -4px;
+}
+
+.footer__logo span {
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.footer__email a,
+.footer__socials i {
+    font-size: 18px;
+    color: #a0a3a6;
+    cursor: pointer;
+}
+
+.footer__socials i {
+    margin-right: 5px;
+}
+
+.footer__email a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer__email a:hover,
+.footer__socials i:hover {
+    color: #fff;
+}
+
+.footer__social-icons {
+    width: max-content;
+    margin: 0 auto;
 }
